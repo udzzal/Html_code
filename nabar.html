@@ -21,7 +21,26 @@
             text-decoration: none;
             color:black;
         }
-
+        nav li .dropdown{
+            display: none;
+            position: absolute;
+            padding: 10px;
+            background-color: blueviolet;
+        }
+        nav li:hover .dropdown{
+            display: block;
+            
+        }
+        
+        nav li .drop{
+            display: none;
+            position: absolute;
+            padding: 10px;
+            background-color: blueviolet;
+        }
+        nav li:hover >.drop{
+            display: block;
+        }
 
     </style>
 </head>
@@ -31,7 +50,40 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="from.html">Form </a></li>
-                <li><a href="html_table.html">Table</a></li>
+                <li>
+                    <a href="html_table.html">Table</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="from.html">Form </a></li>
+                        <li><a href="html_table.html">Table</a></li>
+                        <li><a href="html5_body_tag.html">Html Tag</a></li>
+                    </ul>
+                </li>
+                <li><a href="html5_body_tag.html">Html Tag</a></li>
+            </ul>
+        </nav>
+
+        <!-- another nav bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="from.html">Form </a></li>
+                <li>
+                    <a href="html_table.html">Table</a>
+                    <ul class="drop">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="from.html">Form </a>
+                            <ul class="drop">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="from.html">Form </a></li>
+                                <li><a href="html_table.html">Table</a></li>
+                                <li><a href="html5_body_tag.html">Html Tag</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="html_table.html">Table</a></li>
+                        <li><a href="html5_body_tag.html">Html Tag</a></li>
+                    </ul>
+                </li>
                 <li><a href="html5_body_tag.html">Html Tag</a></li>
             </ul>
         </nav>
